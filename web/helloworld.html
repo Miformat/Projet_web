@@ -3,43 +3,49 @@
 <head>
 	<title>Hello world</title>
 	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="../www/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../www/css/scene.css">
+	<link rel="stylesheet" type="text/css" href="../www/css/gui.css">
+	<link rel="stylesheet" type="text/css" href="../www/css/infos.css">
 </head>
 <body>
-	<div class="decors">
-		<ul class="fenetre">
-		<li>
-			<div id="info">
-				Infos
-				<br/>
-				<br/>
-				<div class="name">Ulrich</div>
-				<br/>
-				<div class="class">Samourai</div>
-				<br/>
-				<div class="stars">Image (2/5)</div>
-				<br/>
-				<div class="perso">Image (perso)</div>
-				<br/>
-				<ul>
-					<li id="xp">XP : 456</li>
-					<br/>
-					<li id="player_pv">PV : Image(3)</li>
-					<br/>
-					<li id="player_power">Puissance : 12</li>
-				<ul/>
-				<br/>
+<div class="screen">
+	<div class="scene-view">
+		<div class="scene">
+			<div id="player"></div>
+			<div id="ennemy1" class="ennemy"></div>
+			<div id="ennemy2" class="ennemy"></div>
+		</div>
+		<div id="gui">
+			<div id="main-win" class="window">
+				<div class="menu">
+					<ul>
+						<li class="selected">Infos</li>
+						<li>Equipement</li>
+						<li>Statistiques</li>
+					</ul>
+				</div>
+				<div id="infos" class="content">
+					<div class="player-preview"></div>
+					<div class="player-name">Ulrich</div>
+					<div class="player-title">Samourai</div>
+					<div class="player-progress">
+						<div class="player-progress-indic"></div>
+					</div>
+					<dl>
+						<dt>XP</dt>
+						<dd class="xp"></dd><!--456!-->
+						<dt>HP</dt>
+						<dd class="hp"></dd><!--120!-->
+						<dt>Puissance</dt>
+						<dd class="power"></dd><!--12!-->
+					</dl>
+				</div>
+				<div id="equipment" class="content"></div>
+				<div id="stats" class="content"></div>
 			</div>
-		</li>
-		<li>
-			<div id="inventaire">Equipement</div>
-		</li>
-		<li>
-			<div id="stats">Statistiques</div>
-		</li>
-		</ul>
-		<div id="player">Image (Player)</div>
-		<div class="ennemy">Image (Ennemy01)</div>
-		<div class="ennemy">Image (Ennemy02)</div>
+		</div>
 	</div>
+</div>
 </body>
 </html>

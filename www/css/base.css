@@ -1,0 +1,149 @@
+@font-face {
+	font-family: gun4fc;
+	src: url(../font/gun4fc.ttf);
+}
+
+@font-face {
+	font-family: gun4f;
+	src: url(../font/gun4f.ttf);
+}
+
+html, body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: gun4fc, sans-serif;
+	font-size: 12px;
+}
+
+.scene{
+	background-image: url(../img/forest.jpg);
+	top: -1300px;
+	left: -3200px;
+	position : absolute;
+	width: 4096px;
+	height: 2037px;
+}
+
+body{
+	background-color : black;
+}
+
+.screen{
+	width: 800px;
+	height: 600px;
+	overflow: hidden;
+	position : absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -400px;
+}
+
+#infos{
+	height:350px;
+	width: 400px;
+	float: left;
+	border: 1px solid white;
+}
+
+.menu{
+	height:350px;
+	width: 160px;
+	float: left;
+	border: 1px solid white;
+	list-style: url(../img/images/icon-xp-medium.png);
+}
+
+.player-preview{
+	background-image: url(../img/selection-1-2-1.png);
+	position : absolute;
+	height:250px;
+	width: 185px;
+	top: 30px;
+	left: 230px;
+}
+
+.player-name{
+	position: absolute;
+	top: 10px;
+	left: 340px;
+}
+
+.player-title{
+	position: absolute;
+	top: 30px;
+	left: 328px;
+}
+
+.player-progress-indic{
+	background-image: url(../img/images/icon-star-on.png);
+	position : absolute;
+	height:14px;
+	width: 43px;
+	top: 50px;
+	left: 340px;
+}
+
+.xp{
+	background-image: url(../img/images/icon-xp-small.png);
+	position : absolute;
+	top: 13px;
+	left: 155px;
+	width: 13%;
+}
+
+.hp{
+	background-image: url(../img/images/heart.png);
+	position : absolute;
+	top: 30px;
+	left: 155px;
+	width: 10%;
+}
+
+.power{
+	background-image: url(../img/images/icon-ep-small.png);
+	position : absolute;
+	top: 42px;
+	left: 210px;
+	width: 4%;
+}
+
+#gui{
+	background-image: url(../img/images/background.jpg);
+	position : absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#player{
+	background-image: url(../img/idle-1-2-1.png);
+	background-size: 135%;
+	position : absolute;
+	top: 1740px;
+	left: 3685px;
+	width: 75px;
+	height: 100px;
+}
+
+#ennemy1{
+	background-image: url(../img/idle-1.png);
+	background-size: 115%;
+	position : absolute;
+	top: 1750px;
+	left: 3850px;
+	width: 75px;
+	height: 100px;
+}
+
+#ennemy2{
+	background-image: url(../img/idle-1.png);
+	background-size: 115%;
+	position : absolute;
+	top: 1790px;
+	left: 3850px;
+	width: 75px;
+	height: 100px;
+}
